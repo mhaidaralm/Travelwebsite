@@ -1,0 +1,451 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.fixed {
+    position: relative;
+    z-index: 1;
+    height: 54px;
+    width: 120vh;
+    background: rgb(250, 255, 255);
+    margin:auto;
+    display: block;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.logo {
+    display: flex;
+    float: left;
+    color: rgb(12, 81, 172);
+    padding: 10px;
+}
+
+.logo h1{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.navigasi {
+    display: flex;
+    float: right;
+}
+
+.navigasi a{
+    font-size: 14px;
+    display: block;
+    color: rgb(134, 171, 226);
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.navigasi .masuk{
+    display: block;
+    text-decoration: none;
+    background-color: rgb(12, 81, 172);
+    color: white;
+}
+
+.topimage {
+    margin-top: -60px;
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 600px;
+    background-image: url('img/beach.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.layer2 {
+    margin-top: -60px;
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 660px;
+    background-color: black;
+    opacity: 25%;
+}
+
+.welcome {
+    position: relative;
+    margin: 190px auto 0;
+    min-height: 120px;
+    min-width: 50vh;
+    display: block;
+    box-sizing: border-box;
+}
+
+.welcome h1{
+    display: block;
+    text-align: center;
+    position: relative;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-size: 2vmax;
+}
+
+.welcome h2{
+    padding-top: 10px;
+    display: block;
+    text-align: center;
+    position: relative;
+    font-size: 18px;
+    color: white;
+}
+
+.tombol {
+    position: relative;
+    margin: 15px auto 0;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.tombol .tulisan{
+    padding: 5px 10px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    background-color: salmon;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.tombol .tulisan:hover{
+    background-color: rgb(255, 211, 89);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.melayang {
+    position: relative;
+    margin: 140px auto 0;
+    height: 100px;
+    width: 80vh;
+    display: flex;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+}
+
+.melayang .statistik{
+    float: left;
+    width: 25%;
+    text-align: center;
+    margin: auto;
+}
+
+.statistik h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    color: rgb(50, 111, 160);
+}
+
+.statistik a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: lightslategray;
+}
+
+.wisata {
+    display: flex;
+    z-index: -9999;
+    position: relative;
+    margin-top: -60px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 550px;
+    background-color: rgb(16, 44, 82);
+}
+
+.wisata .tulisan {
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 150px auto 150px;
+}
+
+.wisata .tulisan h1{
+    display: block;
+    height: 30px;
+    color: rgb(255, 255, 255);
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.wisata .tulisan p{
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+
+.holidaycard {
+    position: relative;
+    margin: -280px auto 0;
+    height: 400px;
+    width: 120vh;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.holidaycard .gambar1{
+    position: relative;
+    margin: 20px;
+    float: left;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    background-image: url(img/a.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.holidaycard .content{
+    text-align: center;
+    position: relative;
+    margin: 40px auto 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+}
+
+.holidaycard .content button{
+    margin-top: 220px;
+    background-color: salmon;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 11px;
+}
+
+.holidaycard .content button:hover{
+    cursor: pointer;
+    background-color: rgb(255, 211, 89);
+    color: rgb(255, 255, 255);
+}
+
+.holidaycard h1{
+    margin-top: -5px;
+    font-size: 20px;
+}
+
+.holidaycard h2{
+    font-size: 14px;
+}
+
+.holidaycard .gambar1 .gambarhitam{
+    position: absolute;
+    float: left;
+    width: 244.093px;
+    height: 100%;
+    display: block;
+    background-color: black;
+    background-size: cover;
+    opacity: 20%;
+}
+
+.holidaycard .gambar2{
+    margin: 20px;
+    float: left;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    background-image: url(img/b.jpg);
+    background-size: cover;
+
+}
+
+
+.holidaycard .gambar2 .gambarhitam2{
+    position: absolute;
+    float: left;
+    width: 244.093px;
+    height: 100%;
+    display: block;
+    background-color: black;
+    background-size: cover;
+    opacity: 20%;
+}
+
+.holidaycard .gambar3{
+    margin: 20px;
+    float: left;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    background-image: url(img/c.jpg);
+    background-size: cover;
+}
+
+
+
+.holidaycard .gambar3 .gambarhitam3{
+    position: absolute;
+    float: left;
+    width: 244.093px;
+    height: 100%;
+    display: block;
+    background-color: black;
+    background-size: cover;
+    opacity: 20%;
+}
+
+.holidaycard .gambar4{
+    margin: 20px;
+    float: left;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    background-image: url(img/d.jpg);
+    background-size: cover;
+}
+
+.holidaycard .gambar4 .gambarhitam4{
+    position: absolute;
+    float: left;
+    width: 244.093px;
+    height: 100%;
+    display: block;
+    background-color: black;
+    background-size: cover;
+    opacity: 20%;
+}
+
+.network {
+    display: flex;
+    z-index: -999;
+    position: relative;
+    margin-top: -150px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 550px;
+    background-color: #ffffff;
+
+}
+
+.network .contentbox {
+    position: relative;
+    margin: 300px auto 0;
+    height: 100px;
+    width: 120vh;
+    box-sizing: border-box;
+    background-color: #ffffff;
+
+}
+
+.contentbox h1{
+    text-align: center;
+    font-size: 38px;
+    font-weight: bold;
+    color: rgb(45, 46, 48);
+}
+
+.contentbox h2{
+    text-align: center;
+    margin-top: -2px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(45, 46, 48);
+}
+
+.supportbox {
+    display: flex;
+    z-index: 9999999;
+    margin: -140px auto 0;
+    height: 260px;
+    width: 120vh;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+.supportbox .logo1{
+    margin-top: 10px;
+    height: 100%;
+    width: 25%;
+    background: url(img/1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.supportbox .logo2{
+    margin-top: 10px;
+    height: 100%;
+    width: 25%;
+    background: url(img/2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.supportbox .logo3{
+    margin-top: 10px;
+    height: 100%;
+    width: 25%;
+    background: url(img/1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.supportbox .logo4{
+    margin-top: 10px;
+    height: 100%;
+    width: 25%;
+    background: url(img/2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footer{
+    margin-top: 80px;
+    height: 30vh;
+    position: relative;
+    z-index: -10000;
+    background-color: rgb(45, 46, 46);
+}
